@@ -1,0 +1,55 @@
+.how {
+  min-height: 750px;
+  padding-top: 120px;
+  background-image: url(../images/how-bg.png);
+  background-repeat: no-repeat;
+  background-position: center -40px;
+  background-size: 210% 105%;
+
+  &__logo {
+    height: 70px;
+    width: 95px;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 47px;
+    line-height: 48px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__list {
+    margin: 80px 0 0 600px;
+    padding-bottom: 35px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  &__item-title {
+    position: relative;
+    margin-left: 20px;
+    max-width: 225px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -15px;
+      width: 20px;
+      height: 3px;
+      background-color: #7bbf1c;
+    }
+  }
+}

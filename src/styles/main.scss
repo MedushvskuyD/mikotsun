@@ -1,3 +1,28 @@
+@import "default";
+@import "header";
+@import "fungus";
+@import "other";
+@import "about";
+@import "how";
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
 body {
-  background: gray;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
 }

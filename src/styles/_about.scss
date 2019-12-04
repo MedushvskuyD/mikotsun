@@ -1,0 +1,87 @@
+.about {
+  margin-top: -120px;
+
+  &__logo {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    background-image: url(../images/about-logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__title {
+    font-size: 47px;
+    line-height: 48px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 15px;
+  }
+
+  &__text {
+    font-size: 23px;
+    line-height: 48px;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+  }
+
+  &__item {
+    width: 370px;
+    height: 375px;
+    background-image: url(../images/about1.png);
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    padding-top: 150px;
+    margin-bottom: 25px;
+
+    &2 {
+      background-image: url(../images/about2.png);
+      background-position-y: -10px;
+    }
+
+    &3 {
+      background-image: url(../images/about3.png);
+      background-position-y: 25px;
+    }
+  }
+
+  &__item-title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  &__item-text {
+    color: #444;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  &__question {
+    max-width: 870px;
+    margin: 0 auto;
+    padding: 4px;
+    background: linear-gradient(90deg, #f64d01, #63bd1f);
+    border-radius: 12px;
+  }
+
+  &__question-content {
+    width: 100%;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 90px;
+    background-color: #fff;
+    font-size: 27px;
+    font-weight: bold;
+  }
+}

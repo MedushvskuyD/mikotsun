@@ -1,0 +1,99 @@
+.fungus {
+  &__logo {
+    height: 70px;
+    width: 95px;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -15px auto 30px;
+  }
+
+  &__title {
+    color: #383334;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    padding-bottom: 25px;
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 28px;
+    color: #2b2828;
+    text-align: center;
+    padding-bottom: 25px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: 345px;
+    width: 100%;
+  }
+
+  &__item-title {
+    position: relative;
+    padding: 75px 0 0  205px;
+    margin-bottom: 55px;
+    font-size: 22px;
+    line-height: 26px;
+    min-height: 195px;
+    background-image: url(../images/fangus1.png);
+    background-repeat: no-repeat;
+    background-position: 0 center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -30px;
+      width: 50px;
+      height: 3px;
+      background-color: #becbd8;
+    }
+    
+    &2 {
+      background-image: url(../images/fangus2.png);
+    }
+
+    &3 {
+      background-image: url(../images/fangus3.png);
+    }
+  }
+
+  &__item-text {
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 314px;
+    width: 100%;
+    padding-bottom: 70px;
+  }
+
+  &__statistics {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid #f4d3bb;
+    padding: 40px 85px;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -25px;
+      left: 50%;
+      width: 170px;
+      height: 50px;
+      background-color: #fff;
+      background-image: url(../images/fangus-statistics.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      transform: translateX(-50%);
+    }
+  }
+}

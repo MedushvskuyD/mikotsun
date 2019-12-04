@@ -1,0 +1,152 @@
+.other {
+  min-height: 1410px;
+  background-image: url(../images/other-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 145px;
+
+  
+  &__logo {
+    height: 70px;
+    width: 95px;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto 15px;
+  }
+
+  &__title {
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 75px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+  }
+
+  &__item {
+    max-width: 370px;
+    width: 100%;
+    min-height: 590px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+
+  &__item-border {
+    height: 5px;
+    background-color: #a8c53a;
+    margin-bottom: -5px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+  }
+
+  &__item-title {
+    position: relative;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+    padding: 70px 0 10px;
+    text-align: center;
+
+    &::before {
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      content: "";
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #ecf8fa;
+      background-image: url(../images/other1.png);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &2::before {
+      background-image: url(../images/other2.png);
+      background-color: #f4fcfd;
+    }
+
+    &3::before {
+      background-image: url(../images/other3.png);
+      background-color: #f6fdfe;
+    }
+  }
+
+  &__title-text {
+    position: relative;
+    font-size: 18px;
+    line-height: 26px;
+    max-width: 265px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 50px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 330px;
+      height: 15px;
+      background-image: url(../images/other-arrow.png);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &__but {
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #ff6b00;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  &__text {
+    max-width: 345px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  &__statistics {
+    border: 3px solid #f4d3bb;
+    border-radius: 10px;
+  }
+
+  &__statistics-title {
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+    top: -25px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: bold;
+    margin: 0 auto -25px;
+    width: 170px;
+    height: 50px;
+    background-color: #f4fcfd;
+    background-image: url(../images/other-symbol.png);
+    background-repeat: no-repeat;
+    background-position: center -5px;
+  }
+
+  &__statistics-text {
+    padding: 0 80px 20px;
+    font-size: 21px;
+    line-height: 28px;
+    text-align: center;
+  }
+}
