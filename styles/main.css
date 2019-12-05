@@ -51,7 +51,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    height: 85px; }
+    min-height: 85px; }
   .header__top-title-box {
     max-width: 195px;
     width: 100%;
@@ -303,17 +303,16 @@
   max-width: 345px;
   width: 100%; }
 
-.fungus__item-title {
+.fungus__item-title-box {
   position: relative;
-  padding: 75px 0 0  205px;
-  margin-bottom: 55px;
-  font-size: 22px;
-  line-height: 26px;
-  min-height: 195px;
-  background-image: url(../images/fangus1.png);
-  background-repeat: no-repeat;
-  background-position: 0 center; }
-  .fungus__item-title::before {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 55px; }
+  .fungus__item-title-box::before {
     content: "";
     position: absolute;
     left: 0;
@@ -321,10 +320,12 @@
     width: 50px;
     height: 3px;
     background-color: #becbd8; }
-  .fungus__item-title2 {
-    background-image: url(../images/fangus2.png); }
-  .fungus__item-title3 {
-    background-image: url(../images/fangus3.png); }
+
+.fungus__item-title {
+  position: relative;
+  padding-left: 15px;
+  font-size: 22px;
+  line-height: 26px; }
 
 .fungus__item-text {
   font-size: 18px;
@@ -389,11 +390,12 @@
     min-height: 590px;
     background-color: #fff;
     border-radius: 10px; }
+    .other__item:not(:last-child) {
+      margin-right: 20px; }
   .other__item-border {
     height: 5px;
     background-color: #a8c53a;
     margin-bottom: -5px;
-    overflow: hidden;
     border-radius: 10px 10px 0 0; }
   .other__item-title {
     position: relative;
@@ -451,7 +453,7 @@
     text-align: center;
     padding-bottom: 15px; }
   .other__text {
-    max-width: 345px;
+    padding: 0 35px;
     width: 100%;
     margin: 0 auto;
     font-size: 18px;
@@ -521,7 +523,7 @@
       background-position-y: -10px; }
     .about__item3 {
       background-image: url(../images/about3.png);
-      background-position-y: 25px; }
+      background-position-y: 26px; }
   .about__item-title {
     font-size: 24px;
     line-height: 28px;
@@ -546,7 +548,8 @@
     width: 100%;
     border-radius: 8px;
     text-align: center;
-    line-height: 90px;
+    min-height: 90px;
+    padding: 25px 0;
     background-color: #fff;
     font-size: 27px;
     font-weight: bold; }
@@ -557,7 +560,11 @@
   background-image: url(../images/how-bg.png);
   background-repeat: no-repeat;
   background-position: center -40px;
-  background-size: 200% 105%; }
+  background-size: 100% 105%; }
+  .how__inner {
+    background-image: url(../images/how-inner-bg.png);
+    background-repeat: no-repeat;
+    background-position: 150px 230px; }
   .how__logo {
     height: 70px;
     width: 95px;
@@ -597,6 +604,136 @@
       width: 20px;
       height: 3px;
       background-color: #7bbf1c; }
+
+@media (max-width: 1169px) {
+  .container {
+    padding: 20px; }
+  .header {
+    background-image: url(../images/header-bg-media.png);
+    background-size: 200% 120%; }
+    .header__top {
+      margin: 0; }
+    .header__content {
+      max-width: 100%;
+      margin-left: 0;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+  .fungus {
+    margin-top: -80px; }
+    .fungus__list {
+      display: block; }
+    .fungus__item {
+      max-width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .fungus__item-title-box {
+      margin-right: 20px; }
+    .fungus__statistics {
+      padding: 30px 20px; }
+  .other {
+    padding-top: 80px;
+    background-position-y: -200px;
+    background-size: 300% 118%; }
+    .other__list {
+      display: block; }
+    .other__item {
+      max-width: 80%;
+      margin: 0 auto;
+      min-height: 385px;
+      min-width: 320px;
+      padding-bottom: 20px; }
+      .other__item:not(:last-child) {
+        margin-bottom: 60px;
+        margin-right: auto; }
+    .other__statistics {
+      margin-bottom: 150px; }
+  .about {
+    margin-top: -100px; }
+    .about__list {
+      display: block; }
+    .about__item {
+      width: 100%; }
+  .how {
+    background-position: center -70px;
+    padding-top: 70px; }
+    .how__inner {
+      background-position: 100px 230px; }
+    .how__list {
+      margin: 80px 0 0 540px; } }
+
+@media (max-width: 950px) {
+  .header__top {
+    display: block; }
+  .header__top-title-box {
+    margin: 0 auto; }
+  .header__top-list {
+    margin: 20px auto; }
+  .how {
+    background-size: 100% 110%; }
+    .how__inner {
+      background-image: none; }
+    .how__list {
+      margin: 30px auto 0;
+      max-width: 380px;
+      padding-bottom: 0; } }
+
+@media (max-width: 700px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0; }
+  .header {
+    background-size: 300% 160%; }
+    .header__top-list {
+      display: block; }
+    .header__top-item {
+      margin: 10px auto;
+      max-width: 400px; }
+      .header__top-item:not(:first-child) {
+        margin-left: auto; }
+    .header__content {
+      display: block; }
+    .header__content-left {
+      margin: 0 auto; }
+    .header__content-title-box {
+      text-align: center; }
+    .header__content-title-text {
+      max-width: 100%;
+      font-size: 34px; }
+    .header__content-title-description {
+      font-size: 26px; }
+    .header__form {
+      margin: 20px auto; }
+  .fungus__logo {
+    margin-top: 70px; }
+  .fungus__title {
+    font-size: 34px; }
+  .fungus__item {
+    display: block;
+    max-width: 330px;
+    margin: 0 auto;
+    padding: 0 10px; }
+  .fungus__item-title-box {
+    display: block; }
+  .other {
+    padding-top: 20px;
+    background-position-y: -220px; }
+    .other__title {
+      font-size: 34px; }
+    .other__statistics-text {
+      padding: 0 10px 10px; }
+  .about__title {
+    font-size: 34px; }
+  .about__text {
+    line-height: 28px; }
+  .how__title {
+    font-size: 34px; } }
 
 * {
   -webkit-box-sizing: border-box;
