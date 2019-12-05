@@ -1,0 +1,223 @@
+@media (max-width: 1169px) {
+  .container {
+    padding: 20px;
+  }
+
+  .header {
+    background-image: url(../images/header-bg-media.png);
+    background-size: 200% 120%;
+
+    &__top {
+      margin: 0 ;
+    }
+
+    &__content {
+      max-width: 100%;
+      margin-left: 0;
+      justify-content: space-around;
+    }
+  }
+
+  .fungus {
+    margin-top: -80px;
+
+    &__list {
+      display: block;
+    }
+
+    &__item {
+      max-width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__item-title-box {
+      margin-right: 20px;
+    }
+
+    &__statistics {
+      padding: 30px 20px;
+    }
+  }
+
+  .other {
+    padding-top: 80px;
+    background-position-y: -200px;
+    background-size: 300% 118%;
+
+    &__list {
+      display: block;
+    }
+
+    &__item {
+      max-width: 80%;
+      margin: 0 auto;
+      min-height: 385px;
+      min-width: 320px;
+      padding-bottom: 20px;
+
+      &:not(:last-child) {
+        margin-bottom: 60px;
+        margin-right: auto;
+      }
+    }
+
+    &__statistics {
+      margin-bottom: 150px;
+    }
+  }
+
+  .about {
+    margin-top: -100px;
+
+    &__list {
+      display: block;
+    }
+
+    &__item {
+      width: 100%;
+    }
+  }
+
+  .how {
+    background-position: center -70px;
+    padding-top: 70px;
+
+    &__inner {
+      background-position: 100px 230px;
+    }
+
+    &__list {
+      margin: 80px 0 0 540px;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .header {
+    &__top {
+      display: block;
+    }
+
+    &__top-title-box {
+      margin: 0 auto;
+    }
+
+    &__top-list {
+      margin: 20px auto;
+    }
+  }
+
+  .how {
+    background-size: 100% 110%;
+
+    &__inner {
+      background-image: none;
+    }
+    &__list {
+      margin: 30px auto 0;
+      max-width: 380px;
+      padding-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .header {
+    background-size: 300% 160%;
+
+    &__top-list {
+      display: block;
+    }
+
+    &__top-item {
+      margin: 10px auto;
+      max-width: 400px;
+
+      &:not(:first-child) {
+        margin-left: auto;
+      }
+    }
+
+    &__content {
+      display: block;
+    }
+
+    &__content-left {
+      margin: 0 auto;
+    }
+
+    &__content-title-box {
+      text-align: center;
+    }
+
+    &__content-title-text {
+      max-width: 100%;
+      font-size: 34px;
+    }
+
+    &__content-title-description {
+      font-size: 26px;
+    }
+
+    &__form {
+      margin: 20px auto;
+    }
+  }
+
+  .fungus {
+    &__logo {
+      margin-top: 70px;
+    }
+
+    &__title {
+      font-size: 34px;
+    }
+
+    &__item {
+      display: block;
+      max-width: 330px;
+      margin: 0 auto;
+      padding: 0 10px;
+    }
+
+    &__item-title-box {
+      display: block;
+    }
+  }
+
+  .other {
+    padding-top: 20px;
+    background-position-y: -220px;
+
+    &__title {
+      font-size: 34px;
+    }
+
+    &__statistics-text {
+      padding: 0 10px 10px;
+    }
+  }
+
+  .about {
+    &__title {
+      font-size: 34px;
+    }
+
+    &__text {
+      line-height: 28px;
+    }
+  }
+
+  .how {
+    &__title {
+      font-size: 34px;
+    }
+  }
+}

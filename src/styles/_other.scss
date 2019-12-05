@@ -35,13 +35,16 @@
     min-height: 590px;
     background-color: #fff;
     border-radius: 10px;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
   }
 
   &__item-border {
     height: 5px;
     background-color: #a8c53a;
     margin-bottom: -5px;
-    overflow: hidden;
     border-radius: 10px 10px 0 0;
   }
 
@@ -113,7 +116,7 @@
   }
 
   &__text {
-    max-width: 345px;
+    padding: 0 35px;
     width: 100%;
     margin: 0 auto;
     font-size: 18px;

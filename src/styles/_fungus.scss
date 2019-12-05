@@ -34,16 +34,11 @@
     width: 100%;
   }
 
-  &__item-title {
+  &__item-title-box {
     position: relative;
-    padding: 75px 0 0  205px;
+    display: flex;
+    align-items: center;
     margin-bottom: 55px;
-    font-size: 22px;
-    line-height: 26px;
-    min-height: 195px;
-    background-image: url(../images/fangus1.png);
-    background-repeat: no-repeat;
-    background-position: 0 center;
 
     &::before {
       content: "";
@@ -54,14 +49,13 @@
       height: 3px;
       background-color: #becbd8;
     }
-    
-    &2 {
-      background-image: url(../images/fangus2.png);
-    }
+  }
 
-    &3 {
-      background-image: url(../images/fangus3.png);
-    }
+  &__item-title {
+    position: relative;
+    padding-left: 15px;
+    font-size: 22px;
+    line-height: 26px;
   }
 
   &__item-text {
